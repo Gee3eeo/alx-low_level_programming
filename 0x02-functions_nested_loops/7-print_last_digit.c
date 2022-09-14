@@ -3,8 +3,8 @@
 
 /**
  * print_last_digit - print last digit of integer
- * @nld: number's last digit result
- * Return: The last digit
+ * @n: integer to get last digit of
+ * Return: The last digit of n
  */
 
 int print_last_digit(int n)
