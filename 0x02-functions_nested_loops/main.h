@@ -1,32 +1,35 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_H 
 
-/**
- * _putchar - writes the character c to std
- * @c: parameter to compare
- * Return: 1 or 0
- */
-int _putchar(char c);
+#define MAIN_H 
 
-/**
- *
- * print_alphabet - function to print alphabet
- *
- */
+#include<stdio.h> 
+
+int _putchar(char c); 
+
+void print_alphabet(void); 
+
+void print_alphabet_x10(void); 
+
+int _islower(int c); 
+
+int _isalpha(int c); 
+
+int print_sign(int n); 
+
+int _abs(int); 
+
+int print_last_digit(int); 
+
+void jack_bauer(void); 
+
+void times_table(void); 
+
+int add(int, int); 
+
+void print_to_98(int n); 
+
+void print_times_table(int n); 
+
+#endif /* MAIN_H */
 
 
-void print_alphabet(void);
-
-/**
- *
- * print_alphabet_x10 - print lowercase alphabet ten times
- *
- */
-void print_alphabet_x10(void);
-
-/**
- * _islower - prints if c is lower case
- * @c: character to use
- * Return: 1 or 0
- */
-#endif
