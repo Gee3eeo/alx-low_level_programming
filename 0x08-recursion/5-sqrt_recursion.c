@@ -1,39 +1,50 @@
 #include "main.h"
 
 /**
- * power_operation - returns the natural square root of a number
- *  @n: input
- *  @c: iterator
- *  Return: square root of -1
+ * _evaluate - evaluate function sqrt
+ * @i: integer
+ * @n: integer
+ * Return: evaluate sqrt
  */
 
-int power_operation(int n, int c)
+int _evaluate(int i, int n)
 {
-	if (c % (n / c) == 0)
+	/*Evaluate function*/
+	if (n == 0 || n == 1)
 	{
-		if (c * (n / c) == n)
-		{
-			return (c);
-		}
-		else
-			return (-1);
+		return (n);
 	}
-	return (0 + power_operation(n, c + 1));
-}
+	else if (i * i < n)
+	{
+		return (_evaluate(i + 1, n));
+	}
+	else if (i * i == n) /*Condition base*/
+	{
+		return (i);
+	}
 
+	return (-1);
+
+	return (-1);
+}
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: input
- * Return: natural square root
+ * _sqrt_recursion - evaluate sqrt
+ * @n: integer
+ * Return: _sqrt_recursion
  */
 
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
+	int i = 0;
+
+	if (i < 0) /*If n is negative*/
+	{
 		return (-1);
-	if (n == 0)
-		return (0);
-	if (n - 1)
-		return (1);
-	return (power_operation(n, 2));
+	}
+
+	else
+	{
+		return (_evaluate(i, n)); /*Recursive call*/
+	}
+
 }
